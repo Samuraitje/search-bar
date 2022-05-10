@@ -1,0 +1,110 @@
+.container {
+  margin: 30px;
+  width: 350px;
+}
+
+.searchForm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchField {
+  padding: 8px 35px 8px 10px;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+.searchField-focus {
+  outline: none;
+  border-color: black;
+}
+
+.searchField::placeholder {
+  color: rgb(129, 129, 129);
+}
+
+.searchButton {
+  padding: 10px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  right: 0;
+}
+
+.searchButton:hover:enabled {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.searchIcon {
+  padding-top: 4px;
+  width: 14px;
+  height: 14px;
+}
+
+.cancelButton {
+  padding: 10px;
+  margin-right: 35px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  right: 0;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  opacity: 0.6;
+}
+
+.cancelIcon {
+  padding-top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.searchResult {
+  overflow: hidden;
+  overflow-y: auto;
+  border-left: 1px solid rgb(222, 222, 222);
+  border-right: 1px solid rgb(222, 222, 222);
+  box-sizing: border-box;
+}
+
+.searchResult::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.searchItem {
+  width: 100%;
+  margin: 0;
+  padding: 10px 8px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  color: black;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.searchItem:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+a {
+  text-decoration: none;
+}
