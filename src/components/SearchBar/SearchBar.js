@@ -18,7 +18,7 @@ function SearchBar({ data }) {
       const searchResult = searchFilter(searchQuery);
       if (searchQuery.length >= 2) {
          setFilteredData(searchResult);
-      } else if (searchQuery === "") {
+      } else if (searchQuery.length <= 1) {
          setFilteredData([]);
       }
    }
