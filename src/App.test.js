@@ -1,8 +1,11 @@
-import { render, screen } from "@testing-library/react";
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
+import {cleanup} from '@testing-library/react';
 
-test("renders message", () => {
-  render(<App />);
-  const message = screen.getByText(/Edit/i);
-  expect(message).toBeInTheDocument();
+afterEach(cleanup);
+test("App renders without crashing", () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
